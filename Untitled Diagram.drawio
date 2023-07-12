@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-07-11T23:02:25.547Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="w0hi3LZr8zBQP7QKx_wO" version="21.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-12T00:15:24.360Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="2apfKN09hVttboIu733U" version="21.6.2" type="github">
   <diagram name="Page-1" id="8zA1Y8aCRXmYHgJdUoUw">
-    <mxGraphModel dx="1195" dy="657" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+    <mxGraphModel dx="2049" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="1EBvca1nWh1dLmEHwAiq-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;font color=&quot;#0870bf&quot;&gt;Docker&lt;/font&gt; And Commands&lt;font color=&quot;#009900&quot;&gt;(Node.js)&lt;/font&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry y="10" width="1100" height="30" as="geometry" />
+          <mxGeometry y="40" width="1100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="1EBvca1nWh1dLmEHwAiq-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;STEP 1: Create a Server.&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry y="120" width="190" height="30" as="geometry" />
@@ -14,16 +14,179 @@
           <mxGeometry y="160" width="500" height="110" as="geometry" />
         </mxCell>
         <mxCell id="1EBvca1nWh1dLmEHwAiq-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;STEP 3: Write the following code in Dockerfile&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;color: rgb(197, 200, 198); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;FROM &lt;span style=&quot;color: #9b0000;&quot;&gt;node&lt;/span&gt;:&lt;span style=&quot;color: #9872a2;&quot;&gt;18&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(154, 155, 153); background-color: rgb(255, 255, 255);&quot;&gt;# Create app directory&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: #9872a2;&quot;&gt;WORKDIR&lt;/span&gt; &lt;span style=&quot;color: #6089b4;&quot;&gt;/app&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(154, 155, 153); background-color: rgb(255, 255, 255);&quot;&gt;# Install app dependencies&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(154, 155, 153); background-color: rgb(255, 255, 255);&quot;&gt;# A wildcard is used to ensure both package.json&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(154, 155, 153); background-color: rgb(255, 255, 255);&quot;&gt;# AND package-lock.json are copied&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(154, 155, 153); background-color: rgb(255, 255, 255);&quot;&gt;# where available (npm@5+)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: #9872a2;&quot;&gt;COPY&lt;/span&gt; &lt;span style=&quot;color: #6089b4;&quot;&gt;package*.json&lt;/span&gt; &lt;span style=&quot;color: #6089b4;&quot;&gt;./&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: #9872a2;&quot;&gt;RUN&lt;/span&gt; &lt;span style=&quot;color: #6089b4;&quot;&gt;npm&lt;/span&gt; &lt;span style=&quot;color: #6089b4;&quot;&gt;install&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(154, 155, 153); background-color: rgb(255, 255, 255);&quot;&gt;# If you are building your code for production&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(154, 155, 153); background-color: rgb(255, 255, 255);&quot;&gt;# RUN npm ci --omit=dev&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(154, 155, 153); background-color: rgb(255, 255, 255);&quot;&gt;# Bundle app source&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: #9872a2;&quot;&gt;COPY&lt;/span&gt; &lt;span style=&quot;color: #6089b4;&quot;&gt;.&lt;/span&gt; &lt;span style=&quot;color: #6089b4;&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: #9872a2;&quot;&gt;EXPOSE&lt;/span&gt; &lt;span style=&quot;color: #6089b4;&quot;&gt;8000&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(152, 114, 162);&quot;&gt;CMD&lt;/span&gt; &lt;span style=&quot;color: rgb(96, 137, 180);&quot;&gt;[&lt;/span&gt; &lt;span style=&quot;color: rgb(154, 168, 58);&quot;&gt;&quot;npm&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(96, 137, 180);&quot;&gt;,&lt;/span&gt; &lt;span style=&quot;color: rgb(154, 168, 58);&quot;&gt;&quot;run&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(96, 137, 180);&quot;&gt;,&lt;/span&gt; &lt;span style=&quot;color: rgb(154, 168, 58);&quot;&gt;&quot;start&quot;&lt;/span&gt; &lt;span style=&quot;color: rgb(96, 137, 180);&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="10" y="245" width="350" height="460" as="geometry" />
+          <mxGeometry x="10" y="270" width="350" height="460" as="geometry" />
         </mxCell>
         <mxCell id="1EBvca1nWh1dLmEHwAiq-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;STEP 4: Write the following code in .dockerignore&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#999999&quot;&gt;node_modules&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#999999&quot;&gt;npm-debug.log&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#999999&quot;&gt;.env&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#999999&quot;&gt;.git&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#999999&quot;&gt;dist&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#999999&quot;&gt;.aws&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#999999&quot;&gt;.coverage&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="10" y="720" width="350" height="180" as="geometry" />
+          <mxGeometry x="10" y="740" width="350" height="180" as="geometry" />
         </mxCell>
         <mxCell id="1EBvca1nWh1dLmEHwAiq-7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="490" y="1200" as="sourcePoint" />
-            <mxPoint x="490" y="120" as="targetPoint" />
+            <mxPoint x="509.17" y="920" as="sourcePoint" />
+            <mxPoint x="509.17" y="120" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;STEP 5: Build a Docker Image&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="120" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-11" value="Command:&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#808080&quot;&gt;&lt;b&gt;docker&amp;nbsp; build&amp;nbsp; -t&amp;nbsp; &amp;lt;image_name&amp;gt;&amp;nbsp; &amp;lt;directory&amp;gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="555" y="150" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="240" as="sourcePoint" />
+            <mxPoint x="690" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="220" />
+              <mxPoint x="690" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-13" value="Build the image of the &lt;br&gt;specified name" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="235" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=-0.061;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="1EBvca1nWh1dLmEHwAiq-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="240" as="sourcePoint" />
+            <mxPoint x="770" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-15" value="Replace the &amp;lt;image_name&amp;gt; with the name &lt;br&gt;you want to give this docker image&lt;br&gt;eg: express-image" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="645" y="320" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="240" as="sourcePoint" />
+            <mxPoint x="850" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="960" y="200" />
+              <mxPoint x="850" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-17" value="Path where you want to create this &lt;br&gt;image. Generaly it is created in the &lt;br&gt;root directry of the project .&lt;br&gt;i.e&amp;nbsp; &quot;.&quot;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="820" y="235" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-18" value="Example Command: &lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#808080&quot;&gt;docker build -t node-docker-image &lt;/font&gt;&lt;font style=&quot;font-size: 17px;&quot; color=&quot;#808080&quot;&gt;.&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="555" y="410" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-20" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;STEP 5: Check Docker Image is Created&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="520" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1EBvca1nWh1dLmEHwAiq-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="645" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-21" value="Command:&amp;nbsp;&amp;nbsp;&lt;font color=&quot;#808080&quot;&gt;&lt;b&gt;docker&amp;nbsp; image ls&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="555" y="560" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-29" value="This command will show all the &lt;br&gt;existing docker images" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="555" y="640" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-32" value="&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;STEP 6: Create a Docker container from this Image in which our application will be running&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="170" y="960" width="670" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-33" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;Command:&amp;nbsp; &amp;nbsp;&lt;font color=&quot;#999999&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;&quot;&gt;docker&amp;nbsp; &amp;nbsp; run&amp;nbsp; &amp;nbsp; --rm&amp;nbsp; &amp;nbsp; -d&amp;nbsp; &amp;nbsp; -p&amp;nbsp; &amp;nbsp;8000:3000&amp;nbsp; &amp;nbsp;--name&amp;nbsp; &amp;nbsp;node-docker-container&amp;nbsp; &amp;nbsp; node-docker-image&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="165" y="1040" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.533;exitY=-0.009;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="1EBvca1nWh1dLmEHwAiq-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="1220" as="sourcePoint" />
+            <mxPoint x="390" y="1070" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="1160" />
+              <mxPoint x="390" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-35" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="1160" as="sourcePoint" />
+            <mxPoint x="360" y="1070" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="80" y="1120" />
+              <mxPoint x="360" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-38" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="1240" as="sourcePoint" />
+            <mxPoint x="420" y="1070" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-39" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="1240" as="sourcePoint" />
+            <mxPoint x="460" y="1070" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.615;exitY=-0.067;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="1EBvca1nWh1dLmEHwAiq-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="1160" as="sourcePoint" />
+            <mxPoint x="530" y="1070" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="1120" />
+              <mxPoint x="530" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.622;exitY=0.017;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="1EBvca1nWh1dLmEHwAiq-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="578" y="1159" as="sourcePoint" />
+            <mxPoint x="620" y="1070" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="1120" />
+              <mxPoint x="620" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-42" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="1120" as="sourcePoint" />
+            <mxPoint x="780" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-43" value="This option will prevent the conflict &lt;br&gt;by removing the container with the &lt;br&gt;same name if exist" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="1160" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-44" value="Run the container in &lt;br&gt;detatch mood. which&amp;nbsp;&lt;br&gt;it will run in background&lt;br&gt;i.e terminal will be free&amp;nbsp;&lt;br&gt;no logs will appear" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1243" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-46" value="This specify the port no. on which &lt;br&gt;container will run.Basically it is for maping &lt;br&gt;the host port no. to docker port no.&lt;br&gt;eg: -p &amp;lt;host_port&amp;gt;:&amp;lt;docker_port&amp;gt;&lt;br&gt;It tells the docker to run the container on&amp;nbsp;&lt;br&gt;port 3000 of docker and map all the &lt;br&gt;request&amp;nbsp; comming to host port 8000 to the &lt;br&gt;docker port 3000" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1243" width="250" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-47" value="Name Of Conatiner" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1160" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-50" value="Docker image name" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1120" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1EBvca1nWh1dLmEHwAiq-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="1445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-51" value="Command: &lt;b&gt;&lt;font color=&quot;#999999&quot;&gt;docker ps&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1430" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-54" value="Show the list of all running containers" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1430" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1EBvca1nWh1dLmEHwAiq-55" target="1EBvca1nWh1dLmEHwAiq-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-55" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;Command:&amp;nbsp; &amp;nbsp;&lt;font color=&quot;#999999&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;&quot;&gt;docker&amp;nbsp; &amp;nbsp; run&amp;nbsp; &amp;nbsp; --rm&amp;nbsp; &amp;nbsp; -d&amp;nbsp; &amp;nbsp; -p&amp;nbsp; &amp;nbsp;8000:3000&amp;nbsp; &amp;nbsp;--env-file ./.env&amp;nbsp; &amp;nbsp;--name&amp;nbsp; &amp;nbsp;node-docker-container&amp;nbsp; &amp;nbsp; node-docker-image&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1500" width="780" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1EBvca1nWh1dLmEHwAiq-58" value="Now it can read the .env file.&lt;br&gt;it is always a recomanded to&lt;br&gt;keep .env file in .dockerignore&lt;br&gt;and let the docker read the .env&amp;nbsp;&lt;br&gt;in this way. so that docker build&amp;nbsp;&lt;br&gt;will not ave any .env file which &lt;br&gt;can be a security threat" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1580" width="200" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
