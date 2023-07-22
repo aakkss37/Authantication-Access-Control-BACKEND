@@ -1,3 +1,16 @@
 20230722	07:39:11	2d29061d-40d6-40ea-9416-88c226daadd0	Error: Request rejected by CORS
 20230722	07:40:35	bb2d832a-aa65-4211-bb54-ea38e0f161ce	Error: Request rejected by CORS
 20230722	07:40:48	3322c2ea-eff5-47d3-91fe-d88bc4932e08	Error: Request rejected by CORS
+20230722	08:28:05	5737f08b-43cd-40e9-8ce4-5cedf43fac13	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\server\view\404.html'
+20230722	08:28:34	f0408e1b-6c2f-4a96-9a23-933907dc6a86	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\server\view\404.html'
+20230722	09:48:57	682180c3-00e6-416f-9242-b4a6b6239379	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\subdir\index.html'
+20230722	09:50:04	0e40a89a-f1b8-4bf4-9750-2aae3f78fe24	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\subdir\index.html'
+20230722	09:52:11	4cf6e5db-079b-4a77-85a5-158a621ec44e	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\subdir\index.html'
+20230722	09:54:37	6b31406f-d07c-42c9-a906-7c7664178f98	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\subdir\index.html'
+20230722	09:55:33	64da7b07-a6b6-4a7d-89ed-92f76b4e79c8	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\index.html'
+20230722	09:57:07	24bd1f5e-a5bd-404f-9af5-5657391035c9	TypeError: path must be absolute or specify root to res.sendFile
+20230722	09:58:27	abe534fc-f492-46e8-a6a0-a4dc2352edd0	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\subdir\index.html'
+20230722	10:00:34	e9c3a250-4a9f-4cc6-b312-0348a988ed76	TypeError: path must be absolute or specify root to res.sendFile
+20230722	10:01:13	b508de34-56d1-43f2-b2f0-baf0dee7bb89	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\new-page.html'
+20230722	10:01:45	0b20ab89-95cf-4336-8ae8-d8fe43a34e83	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\server\view\new-page.html'
+20230722	10:02:59	9402f96d-06fa-4ecb-8ce0-6c4d3538ecc8	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\subdir\index.html'
