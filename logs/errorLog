@@ -14,3 +14,15 @@
 20230722	10:01:13	b508de34-56d1-43f2-b2f0-baf0dee7bb89	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\new-page.html'
 20230722	10:01:45	0b20ab89-95cf-4336-8ae8-d8fe43a34e83	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\server\view\new-page.html'
 20230722	10:02:59	9402f96d-06fa-4ecb-8ce0-6c4d3538ecc8	Error: ENOENT: no such file or directory, stat 'C:\Users\Amar\Desktop\MERN PROJECT\00. MINI REACT COMPONENT\4. Access Control and Authantication\view\subdir\index.html'
+20230723	06:06:20	b08f145f-7648-48f1-927c-272cd7b958df	TypeError: res.send.json is not a function
+20230723	06:07:56	ed45c37d-6448-4743-bcd8-a0022412075e	Error: Cannot set headers after they are sent to the client
+20230723	06:08:47	68b51b88-fb92-4434-a5a0-a10cc027c23e	TypeError: Cannot read properties of undefined (reading 'firstname')
+20230723	06:11:47	38f38e91-490c-4ebf-abc6-b2b9e4e87246	Error: Cannot set headers after they are sent to the client
+20230723	06:14:33	8cd92497-a3c5-4c23-9637-708dca95dffe	TypeError: Cannot read properties of undefined (reading 'firstname')
+20230723	06:15:08	f20a991d-cfac-4822-b9ec-3f29689376fe	TypeError: Cannot read properties of undefined (reading 'firstname')
+20230723	06:16:13	e20d96d6-8885-4b75-b7e0-3d8a16ba5d4c	TypeError: Cannot read properties of undefined (reading 'firstname')
+20230723	06:16:55	3012cffe-03ae-4ff0-b4b4-4ddcdc61c931	TypeError: Cannot read properties of undefined (reading 'firstname')
+20230723	06:17:49	3d252cf8-e1ec-4b02-a7d5-ab61d57d52bd	TypeError: Cannot read properties of undefined (reading 'firstname')
+20230723	06:19:40	6d0468fd-7841-4fb3-b13f-84d0bd4444ed	TypeError: Cannot read properties of undefined (reading 'firstname')
+20230723	06:20:06	ea82f9ee-1bc0-41b8-9ce2-113a99f4af9c	TypeError: Cannot read properties of undefined (reading 'firstname')
+20230723	06:20:16	a09f16e3-e483-414b-95a3-cbfbcf6c7561	TypeError: Cannot read properties of undefined (reading 'firstname')

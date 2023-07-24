@@ -1,20 +1,12 @@
 import express from "express";
+const app = express()
+
 import cors from "cors"
 import path from "path"
 const __dirname = path.resolve();
 import { errorHandler } from "./middleware/errorHandler.js";
-const app = express()
-const whiteList = ["https://www.yourdomain.com", "https://www.google.com", "http://localhos:3000"]
-const corsOption = {
-	origin: (origin, callBack) => {
-		if(whiteList.indexOf(origin) !== -1 || !origin){
-			callBack(null, true)
-		}else{
-			callBack(new Error("Request rejected by CORS"))
-		}
-	},
-	optionSucessStatus: 200,
-}
+
+import corsOption from "./config/cors.js";
 app.use(cors(corsOption));
 
 
