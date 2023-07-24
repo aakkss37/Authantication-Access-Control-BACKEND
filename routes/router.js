@@ -4,19 +4,6 @@ const router = express.Router();
 // const __dirname = path.resolve();
 import employeeController from "../controllers/employeeController.js"
 
-// router.get('^/$|/subdir/index(.html)?', (req, res) => {
-// 	res.sendFile(path.join(__dirname, 'view', 'subdir', 'index.html'));
-// });
-
-// router.get('/subdir/test(.html)?', (req, res) => {
-// 	res.sendFile(path.join(__dirname, 'view', 'subdir', 'test.html'));
-// });
-
-// router.get('^/$|/index(.html)', (req, res) => {
-// 	res.sendFile(path.join(__dirname, 'view', 'index.html'));
-// });
-
-
 router.route('/employee')
 	.get(employeeController.getEmployees)
 	.post(employeeController.createEmployee)

@@ -30,6 +30,7 @@ const getEmployeeById = async (req, res) => {
 }
 const createEmployee = async (req, res) => {
 	console.log("request in _createEmployee controller")
+	console.log(req.body)
 	res.status(201).json(
 		[
 			{
