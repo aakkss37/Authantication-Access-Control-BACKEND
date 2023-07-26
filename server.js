@@ -11,6 +11,11 @@ import corsOption from "./config/cors.js";
 app.use(cors(corsOption));
 
 
+// DATABASE CONNECTION
+import mongoseConnection from "./db/dbConfig.js";
+mongoseConnection();
+
+
 // routes
 import router from "./routes/router.js";
 app.use('/', router);

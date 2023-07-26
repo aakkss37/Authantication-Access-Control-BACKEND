@@ -26,3 +26,4 @@
 20230723	06:19:40	6d0468fd-7841-4fb3-b13f-84d0bd4444ed	TypeError: Cannot read properties of undefined (reading 'firstname')
 20230723	06:20:06	ea82f9ee-1bc0-41b8-9ce2-113a99f4af9c	TypeError: Cannot read properties of undefined (reading 'firstname')
 20230723	06:20:16	a09f16e3-e483-414b-95a3-cbfbcf6c7561	TypeError: Cannot read properties of undefined (reading 'firstname')
+20230724	12:38:03	ca285b9e-967d-44ff-8add-fcb825dc3081	SyntaxError: Unexpected token f in JSON at position 4
