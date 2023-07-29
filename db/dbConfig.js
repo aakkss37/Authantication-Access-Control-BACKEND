@@ -4,14 +4,13 @@ dotenv.config();
 const DB_USERNAME = process.env.DB_USERNAME;
 const DB_PASSWORD = process.env.DB_PASSWORD;
 
-console.log(DB_USERNAME, DB_PASSWORD)
 
 
 // CONNECTION
 import mongoose from "mongoose";
 mongoose.set('strictQuery', false);
 
-const CONNECTION_URL = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@atlascluster.awjqqfr.mongodb.net/?retryWrites=true&w=majority`
+const CONNECTION_URL = `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@atlascluster.awjqqfr.mongodb.net/?retryWrites=true&w=majority`
 const connectionOption = {
 	useNewUrlParser: true,
 	useUnifiedTopology: true

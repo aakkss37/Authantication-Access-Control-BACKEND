@@ -1,7 +1,5 @@
 import express from "express";
 const router = express.Router();
-// import path from "path"
-// const __dirname = path.resolve();
 import employeeController from "../controllers/employeeController.js"
 
 router.route('/employee')
