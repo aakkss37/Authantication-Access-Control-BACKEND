@@ -10,7 +10,7 @@ const DB_PASSWORD = process.env.DB_PASSWORD;
 import mongoose from "mongoose";
 mongoose.set('strictQuery', false);
 
-const CONNECTION_URL = `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@atlascluster.awjqqfr.mongodb.net/?retryWrites=true&w=majority`
+const CONNECTION_URL = `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@atlascluster.awjqqfr.mongodb.net/access_control?retryWrites=true&w=majority`
 const connectionOption = {
 	useNewUrlParser: true,
 	useUnifiedTopology: true

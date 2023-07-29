@@ -1,6 +1,9 @@
 import express from "express";
 const router = express.Router();
 import employeeController from "../controllers/employeeController.js"
+import { handleNewRegister } from "../controllers/registerController.js";
+
+router.post("/register", handleNewRegister)
 
 router.route('/employee')
 	.get(employeeController.getEmployees)
