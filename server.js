@@ -18,7 +18,7 @@ mongoseConnection();
 
 // routes
 import publicRouter from "./routes/publicRouter.js";
-app.use('/employee', publicRouter);
+app.use('/auth', publicRouter);
 
 
 app.use(errorHandler)
