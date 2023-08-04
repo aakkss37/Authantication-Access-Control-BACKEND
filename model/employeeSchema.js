@@ -2,21 +2,15 @@ import mongoose from "mongoose";
 
 
 const userSchema = new mongoose.Schema({
-	email: {
-		type: String,
-		required: true,
-		unique: true,
-	},
-	password: {
+	firstName: {
 		type: String,
 		required: true,
 	},
-	role: {
-		User: {type: Number, default: 2001},
-		Editor: Number,
-		Admin: Number,
+	laseName: {
+		type: String,
+		required: true,
 	},
-	refreshToken: String,
+
 })
 
 const User = mongoose.model('User', userSchema);
