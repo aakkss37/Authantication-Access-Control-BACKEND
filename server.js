@@ -12,7 +12,7 @@ app.use(cors(corsOption));
 
 
 // DATABASE CONNECTION
-import mongoseConnection from "./db/dbConfig.js";
+import mongoseConnection from "./config/dbConfig.js";
 mongoseConnection();
 
 
@@ -21,8 +21,24 @@ import publicRouter from "./routes/publicRouter.js";
 app.use('/auth', publicRouter);
 
 
+import verifyJWT from "./middleware/verifyJWT.js";
+app.use(verifyJWT);
+import privateRouter from "./routes/privateRoute.js";
+app.use("/", privateRouter);
+
+
 app.use(errorHandler)
 
+app.all('*', (req, res) => {
+	res.status(404);
+	if (req.accepts('html')) {
+		res.sendFile("./view/404Error.html");
+	} else if (req.accepts('json')) {
+		res.json({ "error": "404 Not Found" });
+	} else {
+		res.type('txt').send("404 Not Found");
+	}
+});
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {

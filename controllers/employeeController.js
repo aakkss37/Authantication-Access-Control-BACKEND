@@ -1,86 +1,70 @@
-const getEmployees = async (req, res) => {
-	console.log("request in _getEmployee controller")
-	res.status(200).json(
-		[
-			{
-				firstname: "Dave",
-				lastname: "Gray"
-			},
-			{
-				firstname: "John",
-				lastname: "Smith"
-			}
-		]
-	)
+import Employee from "../model/employeeSchema.js";
+
+const getAllEmployees = async (req, res) => {
+	const employees = await Employee.find();
+	if (!employees) return res.status(204).json({ 'message': 'No employees found.' });
+	res.json(employees);
 }
-const getEmployeeById = async (req, res) => {
-	console.log("request in _getEmployeeById controller")
-	res.status(200).json(
-		[
-			{
-				firstname: "Dave",
-				lastname: "Gray"
-			},
-			{
-				firstname: "John",
-				lastname: "Smith"
-			}
-		]
-	)
+
+const createNewEmployee = async (req, res) => {
+	if (!req?.body?.firstname || !req?.body?.lastname) {
+		return res.status(400).json({ 'message': 'First and last names are required' });
+	}
+
+	try {
+		const result = await Employee.create({
+			firstname: req.body.firstname,
+			lastname: req.body.lastname
+		});
+
+		res.status(201).json(result);
+	} catch (err) {
+		console.error(err);
+	}
 }
-const createEmployee = async (req, res) => {
-	console.log("request in _createEmployee controller")
-	console.log(req.body)
-	res.status(201).json(
-		[
-			{
-				firstname: "Dave",
-				lastname: "Gray"
-			},
-			{
-				firstname: "John",
-				lastname: "Smith"
-			}
-		]
-	)
-}
+
 const updateEmployee = async (req, res) => {
-	console.log("request in _updateEmployee controller")
-	res.status(202).json(
-		[
-			{
-				firstname: "Dave",
-				lastname: "Gray"
-			},
-			{
-				firstname: "John",
-				lastname: "Smith"
-			}
-		]
-	)
+	if (!req?.body?.id) {
+		return res.status(400).json({ 'message': 'ID parameter is required.' });
+	}
+
+	const employee = await Employee.findOne({ _id: req.body.id }).exec();
+	if (!employee) {
+		return res.status(204).json({ "message": `No employee matches ID ${req.body.id}.` });
+	}
+	if (req.body?.firstname) employee.firstname = req.body.firstname;
+	if (req.body?.lastname) employee.lastname = req.body.lastname;
+	const result = await employee.save();
+	res.json(result);
 }
+
 const deleteEmployee = async (req, res) => {
-	console.log("request in _deleteEmployee controller")
-	res.status(202).json(
-		[
-			{
-				firstname: "Dave",
-				lastname: "Gray"
-			},
-			{
-				firstname: "John",
-				lastname: "Smith"
-			}
-		]
-	)
+	if (!req?.body?.id) return res.status(400).json({ 'message': 'Employee ID required.' });
+
+	const employee = await Employee.findOne({ _id: req.body.id }).exec();
+	if (!employee) {
+		return res.status(204).json({ "message": `No employee matches ID ${req.body.id}.` });
+	}
+	const result = await employee.deleteOne(); //{ _id: req.body.id }
+	res.json(result);
+}
+
+const getEmployeeByID = async (req, res) => {
+	if (!req?.params?.id) return res.status(400).json({ 'message': 'Employee ID required.' });
+
+	const employee = await Employee.findOne({ _id: req.params.id }).exec();
+	if (!employee) {
+		return res.status(204).json({ "message": `No employee matches ID ${req.params.id}.` });
+	}
+	res.json(employee);
 }
 
 const employeeController = {
-	getEmployees,
-	createEmployee,
-	updateEmployee,
+	getEmployeeByID,
 	deleteEmployee,
-	getEmployeeById
+	updateEmployee,
+	createNewEmployee,
+	getAllEmployees,
 };
 
 export default employeeController;

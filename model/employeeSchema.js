@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 
-const userSchema = new mongoose.Schema({
+const employeeSchema = new mongoose.Schema({
 	firstName: {
 		type: String,
 		required: true,
@@ -13,6 +13,6 @@ const userSchema = new mongoose.Schema({
 
 })
 
-const User = mongoose.model('User', userSchema);
+const Employee = mongoose.model('Employee', employeeSchema);
 
-export default User;
+export default Employee;
