@@ -13,7 +13,7 @@ export const handleNewRegister = async (req, res) => {
 		if (userExist) return res.status(409).json({ msg: "Email already exist." }); // -> 409 conflict
 		const hashedPassword = await bcrypt.hash(password, 10)
 		const newUser = await User.create({ email: email, password: hashedPassword });
-		return res.status(201).json({ msg: `New user "${newUser}" created.` });
+		return res.status(201).json({ msg: `New user created.`, user: newUser });
 	} catch (error) {
 		console.log(error)
 		return res.status(500).json({ msg: "Error while signing up" })
@@ -21,7 +21,7 @@ export const handleNewRegister = async (req, res) => {
 
 }
 
-export const handleLogin = async (req, res) => {
+export const handleSignin = async (req, res) => {
 	const { email, password } = req.body;
 	if (!email || !password) {
 		return res.status(400).json({ msg: "Email and Password are required." })
@@ -49,7 +49,7 @@ export const handleLogin = async (req, res) => {
 			// Creates Secure Cookie with refresh token
 			res.cookie('jwt', refreshToken, { httpOnly: true, secure: true, sameSite: 'None', maxAge: 24 * 60 * 60 * 1000 });
 			// Send authorization role and access token to user
-			res.json({ role, accessToken });
+			res.status(200).json({ role, accessToken, user: foundUser.email });
 		} else {
 			return res.status(401).json(({ msg: "Incorrect password" }))
 		}
@@ -58,7 +58,7 @@ export const handleLogin = async (req, res) => {
 	}
 }
 
-export const handleLogout = async (req, res) => {
+export const handleSignout = async (req, res) => {
 	// On client, also delete the accessToken
 
 	const cookies = req.cookies;
